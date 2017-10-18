@@ -10,6 +10,8 @@ composer require redzjovi/tiki
 ```
 use redzjovi\tiki\Tiki;
 
+$tiki = new Tiki();
+
 /*
  * @param [string] $resi
  * @return [array] $result
@@ -34,7 +36,7 @@ use redzjovi\tiki\Tiki;
  *      ]'
  * ]
  */
-$tiki = new Tiki();
 $track = $tiki->track('030071590590');
+
 var_dump($track);
 ```
