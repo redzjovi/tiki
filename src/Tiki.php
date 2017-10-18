@@ -1,6 +1,6 @@
 <?php
 
-namespace redzjovi\Tiki;
+namespace redzjovi\tiki;
 
 use GuzzleHttp\Client;
 use Sunra\PhpSimple\HtmlDomParser;

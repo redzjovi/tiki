@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "redzjovi\\Tiki\\": "src/"
+            "redzjovi\\tiki\\": "src/"
         }
     },
     "require": {}
