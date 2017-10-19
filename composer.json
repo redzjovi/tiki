@@ -2,6 +2,11 @@
     "name": "redzjovi/tiki",
     "description": "Track your TIKI",
     "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "dev-master",
+        "sunra/php-simple-html-dom-parser": "^1.5"
+    },
     "require-dev": {
         "guzzlehttp/guzzle": "^6.3",
         "nesbot/carbon": "dev-master",
@@ -18,6 +23,5 @@
         "psr-4": {
             "redzjovi\\tiki\\": "src/"
         }
-    },
-    "require": {}
+    }
 }
