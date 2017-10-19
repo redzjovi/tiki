@@ -12,21 +12,21 @@ class Tiki
      * @return [array] $result
      * [
      *      'resi' => '030071590590',
-     *      'status' => 'Delivered',
+     *      'status' => 'Success \/ RECEIVED BY: HARIS',
      *      'service' => 'tiki',
-     *      'service_code' => 'ons',
+     *      'service_code' => 'ONS',
      *      'tanggal' => '17-Jul 14:08',
-     *      'dikirim_tanggal' => '',
-     *      'estimasi_sampai'=> '',
-     *      'pengirim' => '',
-     *      'penerima' => '',
-     *      'dikirim_dari => '',
-     *      'dikirim_ke => ''
+     *      'dikirim_tanggal' => '14 July, 2017',
+     *      'estimasi_sampai'=> '15 July, 2017',
+     *      'pengirim' => 'BODYFITSTATION.COM',
+     *      'penerima' => 'MULUK',
+     *      'dikirim_dari => 'JAKARTA-',
+     *      'dikirim_ke => 'JL.KYAI SAHLAN 21\/02 MANYAR -GRESIK',
      *      'status' => 'Success / RECEIVED BY: HARIS',
      *      'history => [
-     *          'tanggal' => '',
-     *          'status' => '',
-     *          'lokasi' => '',
+     *          'tanggal' => '17-Jul 14:08',
+     *          'status' => 'Success \/ RECEIVED BY: HARIS',
+     *          'lokasi' => 'Di [GRESIK]',
      *          'keterangan' => '',
      *      ]'
      * ]
