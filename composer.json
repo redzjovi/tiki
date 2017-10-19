@@ -4,6 +4,7 @@
     "type": "library",
     "require-dev": {
         "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^1.23@dev",
         "sunra/php-simple-html-dom-parser": "^1.5"
     },
     "authors": [

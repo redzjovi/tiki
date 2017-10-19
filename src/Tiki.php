@@ -2,6 +2,7 @@
 
 namespace redzjovi\tiki;
 
+use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Sunra\PhpSimple\HtmlDomParser;
 
@@ -17,7 +18,9 @@ class Tiki
      *      'service_code' => 'ONS',
      *      'tanggal' => '17-Jul 14:08',
      *      'dikirim_tanggal' => '14 July, 2017',
+     *      'dikirim_tanggal_format' => '2017-07-14',
      *      'estimasi_sampai'=> '15 July, 2017',
+     *      'estimasi_sampai_format'=> '2017-07-15',
      *      'pengirim' => 'BODYFITSTATION.COM',
      *      'penerima' => 'MULUK',
      *      'dikirim_dari => 'JAKARTA-',
@@ -86,10 +89,12 @@ class Tiki
         $dikirim_tanggal = explode('</strong>', $dikirim_tanggal);
         $dikirim_tanggal = trim(end($dikirim_tanggal));
         $result['dikirim_tanggal'] = $dikirim_tanggal;
+        $result['dikirim_tanggal_format'] = Carbon::createFromFormat('d F, Y', $dikirim_tanggal)->toDateString();
         $estimasi_sampai = $dom[1]->innertext;
         $estimasi_sampai = explode('</strong>', $estimasi_sampai);
         $estimasi_sampai = trim(end($estimasi_sampai));
         $result['estimasi_sampai'] = $estimasi_sampai;
+        $result['estimasi_sampai_format'] = Carbon::createFromFormat('d F, Y', $estimasi_sampai)->toDateString();
 
         $dom = $domHtml;
         $dom = $dom->find('div[id=collapse0] div table tbody tr td b');
